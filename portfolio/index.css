@@ -1,0 +1,172 @@
+/* Reset & Fonts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Segoe UI", sans-serif;
+    color: #222;
+    background: #f9f9f9;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+  }
+  
+  /* Header */
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #111;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    z-index: 1000;
+  }
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  .nav-links a:hover {
+    color: #00bcd4;
+  }
+  .main{
+    background-color:white;
+    color: black;
+  }
+  /* Section */
+  .section {
+    min-height: 100vh;
+    padding: 100px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+   
+    transform: translateY(40px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  .section.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Intro */
+  #intro {
+    background: linear-gradient(120deg, #00bcd4, #007acc);
+    color: white;
+  }
+  #intro h1 {
+    font-size: 3rem;
+  }
+  #intro span {
+    color: #ffd700;
+  }
+  .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: white;
+    color: #007acc;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  .btn:hover {
+    background: #ffd700;
+    transform: scale(1.1);
+  }
+  
+  /* Skills */
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .skill-card {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  .skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  }
+  
+  /* Certifications */
+  .cert-list {
+    list-style: none;
+    margin-top: 20px;
+  }
+  .cert-list li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+  }
+  
+  /* Projects */
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+  }
+  .project-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.5s ease, background 0.5s ease;
+  }
+  .project-card:hover {
+    transform: scale(1.05);
+    background: #f0faff;
+  }
+  
+  /* Contact */
+  #contact a {
+    color: #007acc;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  #contact a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  footer {
+    background: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+  }
+  
+  /* Animations when scrolling */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
