@@ -57,7 +57,7 @@ header → fixed navigation bar.
 Intro Section
 
 <section id="intro" class="section">
-  <h1>Hello, I'm <span>Lekhaa</span></h1>
+  <h1>Hello, I'm <span>Lalitha</span></h1>
   <p>Frontend Developer | Designer | Tech Enthusiast</p>
   <a href="#projects" class="btn">See My Work</a>
 </section>
